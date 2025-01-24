@@ -15,7 +15,7 @@ const Menu = () => {
   // Fetch products and initialize cart from localStorage
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch("/api/products");
+      const response = await fetch("http://localhost:3000/api/products");
       const data = await response.json();
       setProducts(data);
     }
