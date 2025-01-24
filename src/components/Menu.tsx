@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+
 import ProductCard from "./Productcard";
 import { Product } from "@/pages/type";
 
@@ -10,7 +10,7 @@ const Menu = () => {
   const [cart, setCart] = useState<Product[]>([]);
   const [showCart, setShowCart] = useState(false);
   const [isCheckout, setIsCheckout] = useState(false);
-  const router = useRouter();
+  
 
   // Fetch products and initialize cart from localStorage
   useEffect(() => {

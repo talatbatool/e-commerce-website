@@ -10,7 +10,7 @@ import Offer from "@/components/Offer";
 import Card from "@/components/Card";
 import Reservation from "@/components/Reservation";
 import Footer from "@/components/Footer";
-import ProductCard from '@/components/Productcard';
+
 
 
 export default function App() {

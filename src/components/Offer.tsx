@@ -1,7 +1,7 @@
 "use client"
-import { describe } from "node:test";
+
 import  React from "react";
-import { MdDescription } from "react-icons/md";
+
 type Offer ={
     title:string;
     description:string;
