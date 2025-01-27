@@ -1,5 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
-const Products =[
+export const Products =[
     {
         id:1,
         title:"mexican pizza",
@@ -28,7 +29,7 @@ const Products =[
         title:"itlain",
         category:"delight",
         price: "500.00",
-        imageurl:"pizza8.jpg",
+        imageurl:"/pizza8.jpg",
         bgColor:"bg-amber500"
     
     }
@@ -53,7 +54,7 @@ export default function product()  {
 
 
               </div>
-              <img className='relative w-50'
+              <Image className='relative w-50'
               src={product.imageurl} alt={product.title}/>
             </div>
             <div className='relative text-white px-6 pb-6 mt-6'>

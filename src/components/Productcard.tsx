@@ -1,20 +1,32 @@
-import { Product } from "@/pages/type";
+// import { Product } from "@/pages/type";
+
+import Image from "next/image";
 import React from "react";
 
-interface ProductCardProps extends Product {
-  onAddToCart: (product: Product) => void;
-}
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+};
 
-const ProductCard: React.FC<ProductCardProps> = ({
+
+const ProductCard = ({
   id,
   name,
   price,
   image,
   onAddToCart,
+}: {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  onAddToCart: (product: Product) => void;
 }) => {
   return (
     <div className="bg-white p-4 rounded-md shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-      <img
+      <Image
         src={image}
         alt={`Image of ${name}`}
         loading="lazy"

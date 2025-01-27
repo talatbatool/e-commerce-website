@@ -21,7 +21,7 @@ const products=[
         id:3,
         name:"vegies pizza",
         price:900,
-        image:"/pizza6.jpg"
+        image:"/pizaa12.jpg"
     },
 
 

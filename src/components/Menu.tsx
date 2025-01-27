@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react";
 
 import ProductCard from "./Productcard";
-import { Product } from "@/pages/type";
+import Product from "@/pages/type";
 
 const Menu = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -78,8 +78,6 @@ const Menu = () => {
             <ProductCard
               key={product.id}
               {...product}
-              
-              
               onAddToCart={addToCart}
             />
           

@@ -28,7 +28,7 @@ const Products =[
         title:"itlain",
         category:"delight",
         price: "500.00",
-        imageurl:"pizza10.jpg",
+        imageurl:"/pizza10.jpg",
         bgColor:"bg-amber500"
     
     }
